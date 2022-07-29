@@ -1,0 +1,10 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  api:
+    build: ./api
+    ports:
+      - "100:80"
+  front:
+    build: ./frontend
+    ports:
+      - "80:80"
